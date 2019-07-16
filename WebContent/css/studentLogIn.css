@@ -1,0 +1,140 @@
+.div1
+{
+	position:fixed;
+	top:100px;
+	left:777px;
+	width: 363px;
+	height: 267px;
+	background-image:url("../images/学生端背景.png");
+}
+.div2
+{
+	position:fixed;
+	top:473px;
+	left:737px;
+	width:96px;
+	height:36px;
+	font-size:24px;
+}
+.div3
+{
+	position:fixed;
+	top:582px;
+	left:737px;
+	width:86px;
+	height:36px;
+	font-size:24px;
+}
+
+.div4
+{
+	position:fixed;
+	top:660px;
+	left:890px;
+	font-size:18px;
+	color:red;
+}
+
+#userName
+{
+	position:fixed;
+	top:460px;
+	left:842px;
+	width:338px;
+	height:63px;
+	font-size:24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#password
+{
+	position:fixed;
+	top:569px;
+	left:843px;
+	width:337px;
+	height:63px;
+	font-size:24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#submit
+{
+	position:fixed;
+	top:701px;
+	left:808px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#submit:hover
+{
+	position:fixed;
+	top:701px;
+	left:808px;
+	width:117px;
+	height:59px;
+	background-color:rgba(99,53,10,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#submit:active
+{
+	position:fixed;
+	top:701px;
+	left:808px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#forget
+{
+	position:fixed;
+	top:701px;
+	left:991px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#forget:hover
+{
+	position:fixed;
+	top:701px;
+	left:991px;
+	width:117px;
+	height:59px;
+	background-color:rgba(99,53,10,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+#forget:active
+{
+	position:fixed;
+	top:701px;
+	left:991px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}

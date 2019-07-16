@@ -1,0 +1,216 @@
+.div10
+{
+	position: fixed;
+	top: 147px;
+	left: 605px;
+	width: 113px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.div11
+{
+	position: fixed;
+	top: 260px;
+	left: 605px;
+	width: 163px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.div12
+{
+	position: fixed;
+	top: 361px;
+	left: 605px;
+	width: 113px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.div13
+{
+	position: fixed;
+	top: 467px;
+	left: 605px;
+	width: 140px;
+	height: 50px;
+	font-size: 24px;
+}
+
+.div14
+{
+	position: fixed;
+	top: 591px;
+	left: 605px;
+	width: 140px;
+	height: 50px;
+	font-size: 24px;
+}
+
+#dept_name
+{
+	position: fixed;
+	top: 141px;
+	left: 838px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#building
+{
+	position: fixed;
+	top: 254px;
+	left: 838px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#president
+{
+	position: fixed;
+	top: 355px;
+	left: 838px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#vice_president
+{
+	position: fixed;
+	top: 461px;
+	left: 838px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#description
+{
+	position: fixed;
+	top: 611px;
+	left: 838px;
+	width: 587px;
+	height: 200px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#description::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: rgba(236,202,168,0.4);
+}
+
+#description::-webkit-scrollbar-thumb
+{
+	background-color: rgba(236,202,168,1);
+	border-radius: 15px;
+}
+
+#description::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(232,103,54,0.5);
+	border-radius: 10px;
+}
+
+#submit
+{
+	position:fixed;
+	top:861px;
+	left:1145px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#submit:hover
+{
+	position:fixed;
+	top:861px;
+	left:1145px;
+	width:117px;
+	height:59px;
+	background-color:rgba(18,18,18,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#submit:active
+{
+	position:fixed;
+	top:861px;
+	left:1145px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel
+{
+	position:fixed;
+	top:861px;
+	left:1308px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel:hover
+{
+	position:fixed;
+	top:861px;
+	left:1308px;
+	width:117px;
+	height:59px;
+	background-color:rgba(18,18,18,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel:active
+{
+	position:fixed;
+	top:861px;
+	left:1308px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}

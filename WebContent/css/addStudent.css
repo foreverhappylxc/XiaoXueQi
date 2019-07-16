@@ -1,0 +1,398 @@
+#form1
+{
+	position: fixed;
+	top: 183px;
+	left: 465px;
+}
+
+.can
+{
+	position: fixed;
+	top: 183px;
+	left: 465px;
+}
+
+.div10
+{
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div11
+{
+	position: absolute;
+	top: 13px;
+	left: 530px;
+	width: 96px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div12
+{
+	position: absolute;
+	top: 126px;
+	left: 0px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div13
+{
+	position: absolute;
+	top: 126px;
+	left: 530px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div14
+{
+	position: absolute;
+	top: 243px;
+	left: 0px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div15
+{
+	position: absolute;
+	top: 243px;
+	left: 530px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div16
+{
+	position: absolute;
+	top: 353px;
+	left: 0px;
+	width: 120px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div17
+{
+	position: absolute;
+	top: 353px;
+	left: 530px;
+	width: 96px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div18
+{
+	position: absolute;
+	top: 453px;
+	left: 0px;
+	width: 120px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div19
+{
+	position: absolute;
+	top: 453px;
+	left: 530px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div20
+{
+	position: absolute;
+	top: 546px;
+	left: 0px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.div21
+{
+	position: absolute;
+	top: 546px;
+	left: 530px;
+	width: 72px;
+	height: 36px;
+	font-size: 24px;
+}
+
+#id
+{
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#id_card
+{
+	position: absolute;
+	top: 0px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#password
+{
+	position: absolute;
+	top: 113px;
+	left: 120px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#name
+{
+	position: absolute;
+	top: 113px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+.sex1
+{
+	position: absolute;
+	top: 243px;
+	left: 153px;
+	width: 24px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.sex2
+{
+	position: absolute;
+	top: 243px;
+	left: 270px;
+	width: 30px;
+	height: 36px;
+	font-size: 24px;
+}
+
+.man
+{
+	position: absolute;
+	top: 248px;
+	left: 200px;
+	width: 25px;
+	height: 25px;
+}
+
+.woman
+{
+	position: absolute;
+	top: 248px;
+	left: 317px;
+	width: 25px;
+	height: 25px;
+}
+
+#address
+{
+	position: absolute;
+	top: 230px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#telephone
+{
+	position: absolute;
+	top: 340px;
+	left: 120px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#class_id
+{
+	position: absolute;
+	top: 340px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#enrollment_time
+{
+	position: absolute;
+	top: 449px;
+	left: 120px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#dept_name
+{
+	position: absolute;
+	top: 440px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#major
+{
+	position: absolute;
+	top: 533px;
+	left: 120px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#birthday
+{
+	position: absolute;
+	top: 533px;
+	left: 650px;
+	width: 337px;
+	height: 63px;
+	font-size: 24px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#submit
+{
+	position: absolute;
+	top:646px;
+	left:320px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#submit:hover
+{
+	position: absolute;
+	top:646px;
+	left:320px;
+	width:117px;
+	height:59px;
+	background-color:rgba(18,18,18,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#submit:active
+{
+	position: absolute;
+	top:646px;
+	left:320px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel
+{
+	position: absolute;
+	top:646px;
+	left:550px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel:hover
+{
+	position: absolute;
+	top:646px;
+	left:550px;
+	width:117px;
+	height:59px;
+	background-color:rgba(18,18,18,0.2);
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
+
+#cancel:active
+{
+	position: absolute;
+	top:646px;
+	left:550px;
+	width:117px;
+	height:59px;
+	background-color:white;
+	font-size:20px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBBBB;
+}
