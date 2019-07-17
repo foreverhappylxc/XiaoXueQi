@@ -9,7 +9,7 @@ public class Test {
 		ConnectMySQL connectMySQL = new ConnectMySQL();
 		if (connectMySQL.conn != null)
 		{
-			System.out.print("连接成功");
+			System.out.print("数据库连接成功");
 			try {
 				connectMySQL.conn.close();
 			} catch (SQLException e) {
@@ -19,7 +19,7 @@ public class Test {
 		}
 		else 
 		{
-			System.out.print("连接失败");
+			System.out.print("数据库连接失败");
 		}
 	}
 
