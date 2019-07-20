@@ -10,7 +10,7 @@ public class ConnectMySQL {
 	{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://10.132.48.225:3306/taskshuntingsystem?useSSL=false&serverTimezone=GMT"
+			conn = DriverManager.getConnection("jdbc:mysql://10.132.49.132:3306/taskshuntingsystem?useSSL=false&serverTimezone=GMT"
 					, "root", "zxc123__");
 		} catch (Exception e) {
 			e.printStackTrace();
