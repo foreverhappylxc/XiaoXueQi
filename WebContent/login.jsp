@@ -2,23 +2,22 @@
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>登录</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<script src="js/jquery-2.2.3.min.js"></script>  
-<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
-<link href="http://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
-</head>
-<body>
-	<!-- banner -->
-	<div class="banner about-w3bnr">
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<script type="application/x-javascript"> addEventListener("load", function(){setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
+		<link href="css/font-awesome.css" rel="stylesheet"> 
+		<script src="js/jquery-2.2.3.min.js"></script>  
+		<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+		<link href="http://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+	</head>
+	<body>
+		<div class="banner about-w3bnr">
 		<!-- header -->
 		<div class="header">
 			<div class="w3ls-header"><!-- header-one --> 
@@ -29,17 +28,14 @@
 					<div class="w3ls-header-right">
 						<ul> 
 							<li class="head-dpdn">
-								<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+								<a href="login.jsp"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
 							</li> 
 							<li class="head-dpdn">
-								<a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+								<a href="signup.jsp"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
 							</li> 
 							<li class="head-dpdn"> <!--列表页面不确定!! -->
-								<a href="about.html"><i class="fa fa-gift" aria-hidden="true"></i> 列表</a>
+								<a href="about.jsp"><i class="fa fa-gift" aria-hidden="true"></i> 列表</a>
 							</li> 
-							<li class="head-dpdn">
-								<a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> 帮助</a>
-							</li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div> 
@@ -99,9 +95,9 @@
 										</div>
 									</ul>
 								</li>
-								<li><a href="about.html">全部悬赏</a></li> 
-								<li><a href="central.html">个人中心</a></li>
-								<li><a href="contact.html">发布任务</a></li>
+								<li><a href="about.jsp">全部悬赏</a></li> 
+								<li><a href="central.jsp">个人中心</a></li>
+								<li><a href="contract.jsp">发布任务</a></li>
 							</ul>
 						</div>
 						
@@ -243,13 +239,13 @@
         		}
         	}
         });
-    </script>  
-	<!-- //cart-js -->	
-	<!-- start-smooth-scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>  
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>	
-	<script type="text/javascript">
+   	 </script>  
+		<!-- //cart-js -->	
+		<!-- start-smooth-scrolling -->
+		<script src="js/SmoothScroll.min.js"></script>  
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>	
+		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
@@ -257,10 +253,10 @@
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
-	</script>
-	<!-- //end-smooth-scrolling -->	  
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
+		</script>
+		<!-- //end-smooth-scrolling -->	  
+		<!-- smooth-scrolling-of-move-up -->
+		<script type="text/javascript">
 		$(document).ready(function() {
 			/*
 			var defaults = {
@@ -274,11 +270,11 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			
 		});
-	</script>
-	<!-- //smooth-scrolling-of-move-up --> 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
-</body>
+		</script>
+		<!-- //smooth-scrolling-of-move-up --> 
+		<!-- Bootstrap core JavaScript
+  		  ================================================== -->
+  			 <!-- Placed at the end of the document so the pages load faster -->
+    	<script src="js/bootstrap.js"></script>
+	</body>
 </html>
