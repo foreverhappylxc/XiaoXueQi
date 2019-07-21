@@ -8,6 +8,7 @@
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/JQuerySession.js"></script>
 </head>
 <body>
 	<div class="top" id="top">
@@ -132,95 +133,96 @@
 			</form>
 		</div>
 	</div>
-	<div class="middle1" id="middle1" align="center">
+	<div class="middle1" id="middle1">
 		<span>
-			<a href="#">
-				<i>
-				</i>
+			<a class="text5" href="#">
+				<img class="img4" alt="i1" src="img/i1.png" width="16px" height="14px">
 				主页
 			</a>
 		</span>
 	</div>
 	<div class="middle2" id="middle2" align="center">
-		<div>
+		<div class="middle21">
 			<a href="#">
-				最新 <br>
-				<span>
+				最新 
+				<span class="m21span1">
 					悬赏任务
 				</span>
-				<br>
-				<span>
-					完成任务获得奖励
+				<span class="m21span2">
+					完&nbsp;成&nbsp;任&nbsp;务&nbsp;获&nbsp;得&nbsp;奖&nbsp;励
 				</span>
-				<span>
+				<span class="m21span3">
 					立刻接受任务
-					<i></i>
+					<img alt="img5" src="img/i2.png" width="15px" height="14px">
 				</span>
 			</a>
 		</div>
-		<div>
+		<div class="middle22">
 			<a href="#">
-				发布 <br>
-				<span>
+				发布
+				<span class="m22span1">
 					悬赏任务
 				</span>
-				<br>
-				<span>
-					发布任务获得帮助
+				<span class="m22span2">
+					发&nbsp;布&nbsp;任&nbsp;务&nbsp;获&nbsp;得&nbsp;帮&nbsp;助
 				</span>
-				<span>
+				<span class="m22span3">
 					立刻发布任务
-					<i></i>
+					<img alt="img5" src="img/i2.png" width="15px" height="14px">
 				</span>
 			</a>
 		</div>
 	</div>
-	<div class="middle3" id="middle2" align="center">
+	<div class="middle3" id="middle3" align="center">
 		<h3>
-			如何发布/领取任务？
+			如&nbsp;何&nbsp;发&nbsp;布/领&nbsp;取&nbsp;任&nbsp;务？
 		</h3>
 		<p>
 			有以下四个步骤
 		</p>
-		<div>
+		<div class="m3d1">
 			<div>
 				<h5>注册/登录系统</h5>
-				<span>1</span>
+				<img alt="img6" src="img/i3.png" width="40" height="42">
+				<span class="m3d11">1</span>
 			</div>
 			<div>
 				<h5>进行实名认证</h5>
-				<span>2</span>
+				<img alt="img7" src="img/i4.png" width="40" height="42">
+				<span class="m3d12">2</span>
 			</div>
 			<div>
-				<h5>任务广场发布/接受任务</h5>
-				<span>3</span>
+				<h5>发布/接受任务</h5>
+				<img alt="img8" src="img/i5.png" width="40" height="42">
+				<span class="m3d13">3</span>
 			</div>
 			<div>
 				<h5>完成任务及评价</h5>
-				<span>4</span>
+				<img alt="img9" src="img/i6.png" width="40" height="42">
+				<span class="m3d14">4</span>
 			</div>
 		</div>
 	</div>
-	<div class="middle4" id="middle3">
-		<div>
+	<div class="middle4" id="middle4">
+		<div class="m41">
 			<h5>悬赏内容</h5>
 			<p>
 			在这里，你可以发布任务获得帮助，也可以领取任务帮助他人，一切只为——更好的校园生活。
 			</p>
 		</div>
-		<div>
-			<div>
-				<div>
-					<img alt="" src="">
+		<div class="m42">
+			<div class="m421">
+				<div class="m4211">
 					<div>
-						<a>
+						<a href="">
 							跑腿
 							<span>代取快递/代领外卖/代购等</span>
 						</a>
 					</div>
 				</div>
-				<div>
-					<img alt="" src="">
+			</div>
+			<div class="m422">
+				<div class="m4221">
 					<div>
 						<a href="">
 							组队
@@ -228,8 +230,9 @@
 						</a>
 					</div>
 				</div>
-				<div>
-					<img alt="" src="">
+			</div>
+			<div class="m423">
+				<div class="m4231">
 					<div>
 						<a href="">
 							交易
@@ -237,8 +240,9 @@
 						</a>
 					</div>
 				</div>
-				<div>
-					<img alt="" src="">
+			</div>
+			<div class="m424">
+				<div class="m4241">
 					<div>
 						<a href="">
 							求助
@@ -246,8 +250,9 @@
 						</a>
 					</div>
 				</div>
-				<div>
-					<img alt="" src="">
+			</div>
+			<div class="m425">
+				<div class="m4251">
 					<div>
 						<a href="">
 							其它
@@ -256,16 +261,12 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<span></span>
-				<span></span>
-			</div>
 		</div>
 	</div>
 	<div class="bottom" id="bottom">
-		<div>
+		<div class="b1">
 			<div>
-				团队
+				团&nbsp;队
 				<ul>
 					<li><a href="">关于我们</a></li>
 					<li><a href="">联系我们</a></li>
@@ -273,7 +274,7 @@
 				</ul>
 			</div>
 			<div>
-				帮助
+				帮&nbsp;助
 				<ul>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">操作指南</a></li>
@@ -282,7 +283,7 @@
 				</ul>
 			</div>
 			<div>
-				信息
+				信&nbsp;息
 				<ul>
 					<li><a href="">开发人员信息</a></li>
 					<li><a href="">管理员信息</a></li>
@@ -290,7 +291,7 @@
 				</ul>
 			</div>
 			<div>
-				分类
+				分&nbsp;类
 				<ul>
 					<li><a href="">跑腿</a></li>
 					<li><a href="">组队</a></li>
