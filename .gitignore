@@ -1,0 +1,8 @@
+
+build/classes/backEnd/Test.class
+*.class
+.classpath
+.classpath
+.classpath
+*.prefs
+.settings/org.eclipse.jdt.core.prefs
