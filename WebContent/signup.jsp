@@ -200,7 +200,7 @@
 					<h3>公司</h3>
 					<ul>
 						<li><a href="about.html">关于我们</a></li>
-						<li><a href="contact.html">发布任务</a></li>   
+						<li><a href="contract.jsp">发布任务</a></li>   
 						<li><a href="help.html">加入我们</a></li>   
 					</ul>
 				</div> 
@@ -208,8 +208,8 @@
 					<h3>帮助</h3>
 					<ul>
 						<li><a href="faq.html">FAQ</a></li> 
-						<li><a href="login.html">清空</a></li>   
-						<li><a href="login.html">清单</a></li>  
+						<li><a href="login.jsp">清空</a></li>   
+						<li><a href="login.jsp">清单</a></li>  
 					</ul>  
 				</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
