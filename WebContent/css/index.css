@@ -1,0 +1,352 @@
+@charset "UTF-8";
+@font-face 
+{
+	font-family: FontAwesome;
+	src: 
+		url("../fonts/FontAwesome.otf"),
+		local("../fonts/fontawesome-webfont.eot"),
+		local("../fonts/fontawesome-webfont.svg"),
+		local("../fonts/fontawesome-webfont.ttf"),
+		local("../fonts/fontawesome-webfont.woff"),
+		local("../fonts/fontawesome-webfont.woff2");
+	font-weight: bold;
+}
+
+@font-face 
+{
+	font-family: glyphicons;
+	src: 
+		url("../fonts/glyphicons-halflings-regular.woff"),
+		url("../fonts/glyphicons-halflings-regular.woff2");
+	font-weight: bold;
+}
+
+@keyframes a1
+{
+	from {color: #fff;}
+	to {color: red;}
+}
+
+@keyframes a2
+{
+	from {color: #fff;}
+	to {color: #777;}
+}
+
+@keyframes a3
+{
+	from {color: #999;}
+	to {color: #333;}
+}
+
+html
+{
+	width: 100%;
+}
+
+body
+{
+	margin: 0;
+	width: 100%;
+	height: 2658px;
+}
+
+.top
+{
+	height: 30%;
+	width: 100%;
+	background-size: 100% 100%;
+	background-image: url("../img/1.jpg");
+}
+
+.top1
+{
+	background-color: rgba(64, 68, 105, 0.54);
+}
+
+.text1
+{
+	color: #fff;
+	margin-left: 300px;
+}
+
+.list1
+{
+	list-style: none;
+	display: inline-block;
+	margin-left: 1100px;
+}
+
+.list1 li
+{
+	display: inline-block;
+	color: #fff;
+	margin-left: 30px;
+}
+
+.list1 li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.list1 li a:hover
+{
+	-webkit-animation: a1 1s;
+	animation-fill-mode: forwards;
+}
+
+.top2
+{
+	width: 100%;
+	height: 10%;
+	background-color: rgba(253, 70, 62, 0.84);
+}
+
+.top2_list
+{
+	position: relative;
+	top: -20px;
+}
+
+.top2 div ul
+{
+	list-style: none;
+	display: inline-block;
+	margin-left: 410px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.top2 div ul li
+{
+	display: inline-block;
+	color: #fff;
+	margin-left: 30px;
+}
+
+.top2 div ul li a
+{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.top2 div ul li a:hover
+{
+	-webkit-animation: a2 1s;
+	animation-fill-mode: forwards;
+}
+
+.top2 div
+{
+	display: inline-block;
+	margin-left: 340px;
+}
+
+.top2 div span
+{
+	color: #fff; 
+	display: block;
+}
+
+.img3
+{
+	position: relative;
+	left: 5px;
+}
+
+hr
+{
+	background-color: #999;
+	border: 0px;
+	height: 1px;
+}
+
+.type
+{
+	display: none;
+	background-color: #fff;
+	width: 0px;
+	height: 0px;
+}
+
+.type div
+{
+	display: inline-block;
+	color: #08cae2;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: top;
+	visibility: hidden;
+}
+
+.type div ul
+{
+	list-style: none;
+	color: #999;
+	padding-left: 4px;
+	font-size: 13px;
+	justify-content: center;
+}
+
+.type div ul li
+{
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.type div ul li a
+{
+	text-decoration: none;
+	color: #999;
+	font-size: 15px;
+}
+
+.type div ul li a:hover
+{
+	-webkit-animation: a3 1s;
+	animation-fill-mode: forwards;
+}
+
+.SCU
+{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 40px;
+}
+
+.STHS
+{
+	font-size: 15px;
+}
+
+.top3
+{
+	position: relative;
+	top: -30px;
+	left: 385px;
+	width: 100%;
+	height: 36%;
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+.top3 h2
+{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.top3 h2 span
+{
+	font-weight: 100;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 50px;
+}
+
+.top3 form
+{
+	width: 738px;
+	height: 50px;
+	border: 30px solid rgba(0, 0, 0, 0.55);
+	font-size: 0px;
+}
+
+.keyword
+{
+	width: 60%;
+	height: 100%;
+	border: 0px;
+	padding: 0px;
+	outline: none;
+	vertical-align: top;
+	font-size: 15px;
+	font-size: 15px;
+	color: #999;
+}
+
+.select1
+{
+	width: 10%;
+	height: 100%;
+	border: 0px;
+	outline: none;
+	padding-left: 10px;
+	color: #555;
+	font-size: 15px;
+	background-color: #e0e3e5;
+}
+
+.select1 option,.select2 option
+{
+	background-color: #fff;
+}
+
+.select2
+{
+	width: 20%;
+	height: 100%;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	outline: none;
+	padding-left: 20px;
+	color: #555;
+	font-size: 15px;
+	background-color: #e0e3e5;
+}
+
+.search
+{
+	width: 10%;
+	height: 100%;
+	border: 0px;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+	background-color: #f71d16;
+}
+
+.middle1
+{
+	margin: 0 auto;
+	width: 60%;
+	height: 2%;
+}
+
+.middle1 span
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #ffe9e8;
+}
+
+.middle2
+{
+	width: 100%;
+	height: 20%;
+	background-size: 100% 100%;
+	background-image: url("../img/b1.png");
+}
+
+.middle3
+{
+	width: 59%;
+	height: 15%;
+}
+
+.middle4
+{
+	width: 59%;
+	height: 10%;
+}
+
+.bottom
+{
+	width: 100%;
+	height: 10%;
+}
