@@ -4,7 +4,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
@@ -69,7 +68,7 @@
 						</div> 
 						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.html">主页</a></li>	
+								<li><a href="index.jsp">主页</a></li>	
 								<!-- Mega Menu -->
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">分类 <b class="caret"></b></a>
@@ -91,7 +90,6 @@
 													<li><a href="menu.html">江安校区</a></li> 
 													<li><a href="menu.html">华西校区</a></li> 
 													<li><a href="menu.html">望江校区</a></li> 
-													
 												</ul>
 											</div>
 											<div class="col-sm-4">
