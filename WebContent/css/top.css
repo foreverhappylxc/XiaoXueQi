@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@font-face 
+{
+	font-family: FontAwesome;
+	src: 
+		url("../fonts/FontAwesome.otf"),
+		local("../fonts/fontawesome-webfont.eot"),
+		local("../fonts/fontawesome-webfont.svg"),
+		local("../fonts/fontawesome-webfont.ttf"),
+		local("../fonts/fontawesome-webfont.woff"),
+		local("../fonts/fontawesome-webfont.woff2");
+	font-weight: bold;
+}
+
+@font-face 
+{
+	font-family: glyphicons;
+	src: 
+		url("../fonts/glyphicons-halflings-regular.woff"),
+		url("../fonts/glyphicons-halflings-regular.woff2");
+	font-weight: bold;
+}
+
+@keyframes a1
+{
+	from {color: #fff;}
+	to {color: red;}
+}
+
+@keyframes a2
+{
+	from {color: #fff;}
+	to {color: #777;}
+}
+
+@keyframes a3
+{
+	from {color: #999;}
+	to {color: #333;}
+}
+
+@keyframes a4
+{
+	from {color: #e24945;}
+	to {color: #999;}
+}
+
+@keyframes a5
+{
+	from {color: #999;}
+	to {color: #fff;}
+}
+
+html
+{
+	width: 100%;
+}
+
+body
+{
+	margin: 0;
+	width: 100%;
+	height: 2000px;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.top
+{
+	height: 30%;
+	width: 100%;
+	background-image: url("../img/1.jpg");
+}
+
+.top1
+{
+	background-color: rgba(64, 68, 105, 0.54);
+}
+
+.text1
+{
+	color: #fff;
+	margin-left: 300px;
+}
+
+.list1
+{
+	list-style: none;
+	display: inline-block;
+	margin-left: 1100px;
+}
+
+.list1 li
+{
+	display: inline-block;
+	color: #fff;
+	margin-left: 30px;
+}
+
+.list1 li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.list1 li a:hover
+{
+	-webkit-animation: a1 1s;
+	animation-fill-mode: forwards;
+}
+
+.SCU
+{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 40px;
+}
+
+.STHS
+{
+	font-size: 15px;
+}
+
+.top3
+{
+	position: relative;
+	top: -30px;
+	left: 385px;
+	width: 100%;
+	height: 36%;
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+.top3 h2
+{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.top3 h2 span
+{
+	font-weight: 100;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 50px;
+}
+
+.middle1
+{
+	margin: 0 auto;
+	width: 60%;
+	height: 2%;
+}
+
+.middle1 span
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #ffe9e8;
+	padding-top: 16px;
+	padding-left: 28px;
+}
+
+.img4
+{
+	padding-right: 3px;
+}
+
+.middle1 span a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: #e24945;
+	vertical-align: top;
+}
+
+.middle1 span a:hover
+{
+	-webkit-animation: a4 1s;
+	animation-fill-mode: forwards;
+}

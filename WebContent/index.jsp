@@ -213,52 +213,42 @@
 		<div class="m42">
 			<div class="m421">
 				<div class="m4211">
-					<div>
-						<a href="">
-							跑腿
-							<span>代取快递/代领外卖/代购等</span>
-						</a>
-					</div>
+					<a href="">
+						跑腿
+						<span>代取快递/代领外卖/代购等</span>
+					</a>
 				</div>
 			</div>
 			<div class="m422">
 				<div class="m4221">
-					<div>
-						<a href="">
-							组队
-							<span>出行/参赛/学习等</span>
-						</a>
-					</div>
+					<a href="">
+						组队
+						<span>出行/参赛/学习等</span>
+					</a>
 				</div>
 			</div>
 			<div class="m423">
 				<div class="m4231">
-					<div>
-						<a href="">
-							交易
-							<span>二手买卖/闲置出售/租借等</span>
-						</a>
-					</div>
+					<a href="">
+						交易
+						<span>二手买卖/闲置出售/租借等</span>
+					</a>
 				</div>
 			</div>
 			<div class="m424">
 				<div class="m4241">
-					<div>
-						<a href="">
-							求助
-							<span>生活问题/学习课业/寻人等</span>
-						</a>
-					</div>
+					<a href="">
+						求助
+						<span>生活问题/学习课业/寻人等</span>
+					</a>
 				</div>
 			</div>
 			<div class="m425">
 				<div class="m4251">
-					<div>
-						<a href="">
-							其它
-							<span>更多问题/更多解决</span>
-						</a>
-					</div>
+					<a href="">
+						其它
+						<span>更多问题/更多解决</span>
+					</a>
 				</div>
 			</div>
 		</div>

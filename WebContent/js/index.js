@@ -1,4 +1,34 @@
 $(document).ready(function(){
+	var df;
+	isLeft = true;
+	i1 = 0;
+	j1 = 0;
+	var scroll = function()
+		{
+		if (isLeft)
+			{
+				i1++;
+				$(".m42").animate({scrollLeft: 280 * i1},800);
+				j1++;
+				if (j1 == 2)
+				{
+					isLeft = false;
+				}
+			}
+			else
+			{
+				i1--;
+				$(".m42").animate({scrollLeft: 280 * i1},800)
+				j1--;
+				if (j1 == 0)
+				{
+					isLeft = true;
+				}
+			}
+		}
+	jQuery(function($){
+		df = setInterval(scroll,1000);
+	});
 	$(".text2").mouseover(function(){
 		$(".img1").attr("src", "img/u11.png");
     });
@@ -177,6 +207,172 @@ $(document).ready(function(){
 			}
 			j = Number(j) + Number(0.005);
 			$(".m3d14").css({"opacity": j});
+		}, 1);
+	});
+	$(".middle4").mouseover(function(){
+		$(".m41").css({"background-color": "#09c4dc"});
+	});
+	$(".middle4").mouseout(function(){
+		$(".m41").css({"background-color": "#fd463e"});
+	});
+	var a1;
+	var b1;
+	$(".m4211").mouseout(function(){
+		df = setInterval(scroll, 1000);
+		clearInterval(b1);
+		i = $(".m4211").css("opacity");
+		a1 = setInterval(function(){
+			if (i <= 0)
+			{
+				$(".m4211").css({"opacity": 0});
+				clearInterval(a1);
+				return;
+			}
+			i -= 0.005;
+			$(".m4211").css({"opacity": i});
+		}, 1);
+	});
+	$(".m4211").mouseover(function(){
+		clearInterval(df);
+		clearInterval(a1);
+		j = $(".m4211").css("opacity");
+		b1 = setInterval(function(){
+			if (j >= 1)
+			{
+				$(".m4211").css({"opacity": 1});
+				clearInterval(b1);
+				return;
+			}
+			j = Number(j) + Number(0.005);
+			$(".m4211").css({"opacity": j});
+		}, 1);
+	});
+	var a2;
+	var b2;
+	$(".m4221").mouseout(function(){
+		df = setInterval(scroll, 1000);
+		clearInterval(b2);
+		i = $(".m4221").css("opacity");
+		a2 = setInterval(function(){
+			if (i <= 0)
+			{
+				$(".m4221").css({"opacity": 0});
+				clearInterval(a2);
+				return;
+			}
+			i -= 0.005;
+			$(".m4221").css({"opacity": i});
+		}, 1);
+	});
+	$(".m4221").mouseover(function(){
+		clearInterval(df);
+		clearInterval(a2);
+		j = $(".m4221").css("opacity");
+		b2 = setInterval(function(){
+			if (j >= 1)
+			{
+				$(".m4221").css({"opacity": 1});
+				clearInterval(b2);
+				return;
+			}
+			j = Number(j) + Number(0.005);
+			$(".m4221").css({"opacity": j});
+		}, 1);
+	});
+	var a3;
+	var b3;
+	$(".m4231").mouseout(function(){
+		df = setInterval(scroll, 1000);
+		clearInterval(b3);
+		i = $(".m4231").css("opacity");
+		a3 = setInterval(function(){
+			if (i <= 0)
+			{
+				$(".m4231").css({"opacity": 0});
+				clearInterval(a3);
+				return;
+			}
+			i -= 0.005;
+			$(".m4231").css({"opacity": i});
+		}, 1);
+	});
+	$(".m4231").mouseover(function(){
+		clearInterval(df);
+		clearInterval(a3);
+		j = $(".m4231").css("opacity");
+		b3 = setInterval(function(){
+			if (j >= 1)
+			{
+				$(".m4231").css({"opacity": 1});
+				clearInterval(b3);
+				return;
+			}
+			j = Number(j) + Number(0.005);
+			$(".m4231").css({"opacity": j});
+		}, 1);
+	});
+	var a4;
+	var b4;
+	$(".m4241").mouseout(function(){
+		df = setInterval(scroll, 1000);
+		clearInterval(b4);
+		i = $(".m4241").css("opacity");
+		a4 = setInterval(function(){
+			if (i <= 0)
+			{
+				$(".m4241").css({"opacity": 0});
+				clearInterval(a4);
+				return;
+			}
+			i -= 0.005;
+			$(".m4241").css({"opacity": i});
+		}, 1);
+	});
+	$(".m4241").mouseover(function(){
+		clearInterval(df);
+		clearInterval(a4);
+		j = $(".m4241").css("opacity");
+		b4 = setInterval(function(){
+			if (j >= 1)
+			{
+				$(".m4241").css({"opacity": 1});
+				clearInterval(b4);
+				return;
+			}
+			j = Number(j) + Number(0.005);
+			$(".m4241").css({"opacity": j});
+		}, 1);
+	});
+	var a5;
+	var b5;
+	$(".m4251").mouseout(function(){
+		df = setInterval(scroll, 1000);
+		clearInterval(b5);
+		i = $(".m4251").css("opacity");
+		a5 = setInterval(function(){
+			if (i <= 0)
+			{
+				$(".m4251").css({"opacity": 0});
+				clearInterval(a5);
+				return;
+			}
+			i -= 0.005;
+			$(".m4251").css({"opacity": i});
+		}, 1);
+	});
+	$(".m4251").mouseover(function(){
+		clearInterval(df);
+		clearInterval(a5);
+		j = $(".m4251").css("opacity");
+		b5 = setInterval(function(){
+			if (j >= 1)
+			{
+				$(".m4251").css({"opacity": 1});
+				clearInterval(b5);
+				return;
+			}
+			j = Number(j) + Number(0.005);
+			$(".m4251").css({"opacity": j});
 		}, 1);
 	});
 })

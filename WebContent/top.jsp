@@ -37,44 +37,6 @@
 				</ul>
 		<% }%>
 	</div>
-	<div class="top2" id="top2">
-		<div align="center">
-			<span class="SCU">
-			SCU
-			</span>
-			<span class="STHS">学生日常任务悬赏系统</span>
-	</div>
-		<div class="top2_list">
-			<ul>
-				<li>
-					<a href="#">
-						主页
-					</a>
-				</li>
-				<li>
-					<a class="text4" href="#">
-							分类
-						<img class="img3" alt="img3" src="img/arrow1.png" width="6px" height="8px">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-					全部悬赏
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						个人中心
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						发布任务
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
 <div class="top3" id="top3">
 		<h2>
 			四川大学<br>
