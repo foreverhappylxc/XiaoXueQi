@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face 
+{
+	font-family: FontAwesome;
+	src: 
+		url("../fonts/FontAwesome.otf"),
+		local("../fonts/fontawesome-webfont.eot"),
+		local("../fonts/fontawesome-webfont.svg"),
+		local("../fonts/fontawesome-webfont.ttf"),
+		local("../fonts/fontawesome-webfont.woff"),
+		local("../fonts/fontawesome-webfont.woff2");
+	font-weight: bold;
+}
+
+@font-face 
+{
+	font-family: glyphicons;
+	src: 
+		url("../fonts/glyphicons-halflings-regular.woff"),
+		url("../fonts/glyphicons-halflings-regular.woff2");
+	font-weight: bold;
+}
+
+@keyframes a1
+{
+	from {color: #fff;}
+	to {color: red;}
+}
+
+@keyframes a2
+{
+	from {color: #fff;}
+	to {color: #777;}
+}
+
+@keyframes a3
+{
+	from {color: #999;}
+	to {color: #333;}
+}
+
+@keyframes a4
+{
+	from {color: #e24945;}
+	to {color: #999;}
+}
+
+@keyframes a5
+{
+	from {color: #999;}
+	to {color: #fff;}
+}
+
+.bottom
+{
+	position: absolute;
+	top: 1510px;
+	left: 0px;
+	width: 100%;
+	height: 30%;
+	background-color: #3c3a3a;
+	text-align: center;
+}
+
+.b1
+{
+	padding-top: 42px;
+	padding-left: 42px;
+}
+.b1 div
+{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 110px;
+	padding-right: 110px;
+	color: #08cae2;
+	font-family: 'Berkshire Swash', cursive;
+	font-weight: 500;
+	font-size: 25px;
+}
+.b1 div ul
+{
+	list-style: none;
+	text-align: left;
+	font-size: 15px;
+	padding: 0px;
+	margin-bottom: 16px;
+}
+
+.b1 div ul li
+{
+	padding: 0px;
+	margin-top: 8.4px;
+}
+
+.b1 div ul li a
+{
+	text-decoration: none;
+	color: #999;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.b1 div ul li a:hover
+{
+	-webkit-animation: a5 1s;
+	animation-fill-mode: forwards;
+}

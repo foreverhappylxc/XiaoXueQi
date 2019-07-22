@@ -54,6 +54,7 @@
 html
 {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 body
@@ -62,6 +63,15 @@ body
 	width: 100%;
 	height: 2658px;
 	font-family: 'Yantramanav', sans-serif;
+}
+
+.userImg
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 15px;
+	vertical-align: bottom;
 }
 
 .top
@@ -87,7 +97,7 @@ body
 {
 	list-style: none;
 	display: inline-block;
-	margin-left: 1100px;
+	margin-left: 950px;
 }
 
 .list1 li

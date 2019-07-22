@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -8,7 +9,39 @@
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/JQuerySession.js"></script>
+<script type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var s = ["text2", "text3", "text4", "text5", "text6"]
+	function check(s2)
+	{
+		for (var i = 0; i < s.length; i++)
+			{
+			if (s2 == s[i])
+				return false;
+			}
+		return true;
+	}
+	$("a").each(function(){
+		$(this).click(function(event){
+			if (<%= request.getSession().getAttribute("cu_id") %> == null && check(event.target.className))
+				{
+				alert("请先登录");
+				event.preventDefault();
+				window.location.href="login.jsp";
+				}
+		});
+	});
+	$(".search").click(function(event){
+		if (<%= request.getSession().getAttribute("cu_id") %> == null)
+			{
+			alert("请先登录");
+			event.preventDefault();
+			window.location.href="login.jsp";
+			}
+	});
+})
+</script>
 </head>
 <body>
 	<div class="top" id="top">
@@ -16,7 +49,7 @@
 			<span id="text1" class="text1">
 				四川大学日常任务悬赏系统
 			</span>
-			<% if (request.getSession().getAttribute("username") == null)
+			<% if (request.getSession().getAttribute("cu_id") == null)
 				{%>
 			<ul class="list1" id="list1">
 				<li>
@@ -33,15 +66,15 @@
 				</li>
 			</ul>
 			<%} else { %>
-				<ul>
+				<ul class="list1">
 					<li>
-						<a href="central.jsp">
-							<img alt="" src="">
-							<%= request.getSession().getAttribute("username")  %>
+						<a class="text2" href="central.jsp">
+							<img class="userImg" alt="<%= session.getAttribute("cu_id") %>" src=<%= "userImage/" + session.getAttribute("cu_id") + ".png" %>>
+							<%= request.getSession().getAttribute("cu_nickname")%>
 						</a>
 					</li>
 					<li>
-						<a href="login.jsp">
+						<a class="text3" href="Exit">
 							注销
 						</a>
 					</li>
@@ -58,7 +91,7 @@
 			<div class="top2_list">
 				<ul>
 					<li>
-						<a href="index.jsp">
+						<a class="text6" href="index.jsp">
 							主页
 						</a>
 					</li>
@@ -79,7 +112,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="contract.jsp">
+						<a href="contact.jsp">
 							发布任务
 						</a>
 					</li>
@@ -93,7 +126,7 @@
 					学生日常任务悬赏系统
 				</span>
 			</h2>
-			<form action="">
+			<form action="SearchAbout">
 				<input type="text" class="keyword" name="keyword" id="keyword" placeholder="输入查询关键字" maxlength="20">
 				<select class="select1">
 					<option value="*">
@@ -158,7 +191,7 @@
 			</a>
 		</div>
 		<div class="middle22">
-			<a href="contract.jsp">
+			<a href="contact.jsp">
 				发布
 				<span class="m22span1">
 					悬赏任务
@@ -275,9 +308,9 @@
 			<div>
 				信&nbsp;息
 				<ul>
-					<li><a href="">开发人员信息</a></li>
-					<li><a href="">管理员信息</a></li>
-					<li><a href="">网站信息</a></li>
+					<li><a href="#">开发人员信息</a></li>
+					<li><a href="#">管理员信息</a></li>
+					<li><a href="#">网站信息</a></li>
 				</ul>
 			</div>
 			<div>

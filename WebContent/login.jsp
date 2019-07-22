@@ -128,13 +128,13 @@
 		<div class="container"> 
 			<h3 class="w3ls-title w3ls-title1">登 录 你 的 账 户</h3>  
 			<div class="login-agileinfo"> 
-				<form action="LoginServlet" method="post"> 
-					<input class="agile-ltext" type="text" name="Username" placeholder="用户名"  required>
-					<input class="agile-ltext" type="password" name="password" placeholder="密码"  required>
+				<form action="LoginServlet" method="post" onsubmit="return false;"> 
+					<input id="username" class="agile-ltext" type="text" name="Username" placeholder="用户名"  required>
+					<input id="pwd" class="agile-ltext" type="password" name="password" placeholder="密码"  required>
 					<div class="wthreelogin-text"> 
 						<div class="clearfix"> </div>
 					</div>   
-					<input type="submit" value="登录">
+					<input class="submit" type="submit" value="登录">
 				</form>
 				<p>没有账号？ <a href="signup.jsp"> 现在注册！</a></p> 
 			</div>	 
@@ -227,6 +227,7 @@
 		<script src="js/SmoothScroll.min.js"></script>  
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>	
+		<script type="text/javascript" src="js/jQuerySession.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -240,15 +241,33 @@
 		<!-- smooth-scrolling-of-move-up -->
 		<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			
+			$(".submit").click(function(){
+				if ($("#username").val() != "" && $("#pwd").val() != "")
+				{
+					$.ajax({
+						type: "post",
+						url: "LoginServlet",
+						data: {
+							"Username": $("#username").val(),
+							"Password": $("#pwd").val()
+						},
+						dataType: "json",
+						success: function(response, status, xhr) {
+							if (response[0].success)
+								{
+								window.location.href="index.jsp";
+								}
+							else 
+								{
+								alert("用户名/密码错误");
+								}
+						},
+						error: function(xhr, status, errMsg) {
+							
+						}
+					});
+				}
+			});
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			
 		});
