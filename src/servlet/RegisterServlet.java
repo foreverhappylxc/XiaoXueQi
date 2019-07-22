@@ -37,16 +37,18 @@ public class RegisterServlet extends HttpServlet{
 		String cu_sex = request.getParameter("Sex");
 		String age = request.getParameter("Age");
 		String cu_campus = request.getParameter("Campus");
-		String  cu_email=request.getParameter("Email");
+		String cu_email=request.getParameter("Email");
 		String qq = request.getParameter("QQ");
 		String cu_pwd = request.getParameter("Password");
-		String confirmpwd = request.getParameter("ConfirmPassword");
+		String confirmpwd = request.getParameter("ConfirmPassword");//?wait to update
 		
 		int cu_age =Integer.parseInt(age);
 		int  cu_qq = Integer.parseInt(qq);
+		int cu_credit=0;
+		String cu_authority="一般权限";
 		
 		ConnectMySQL customerregister = new ConnectMySQL();
-		Customer customer = new Customer(cu_id, cu_pwd);//暂定格式
+		Customer customer = new Customer(cu_id,cu_pwd,cu_name,cu_nickname,cu_age,cu_sex,cu_email,cu_campus,cu_qq,cu_credit,cu_authority);
 		DAO dao=new DAO();
 		try {
 			Connection connection=customerregister.conn;

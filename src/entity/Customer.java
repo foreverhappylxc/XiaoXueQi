@@ -12,12 +12,31 @@ public class Customer {
 	private String cu_campus;
 	private String cu_authority;
 	private String cu_img;
-	private int cu_qq;
+	private long cu_qq;
 	
 	public Customer() {};
-	public Customer(String cu_id,String cu_pwd) {
+	public Customer(String cu_id,
+								String cu_pwd,
+								String cu_name,
+								String cu_nickname,
+								int cu_age,
+								String cu_sex,
+								String cu_email,
+								String cu_campus,
+								long cu_qq,
+								int cu_credit,
+								String cu_authority) {
 		this.cu_id=cu_id;
 		this.cu_pwd=cu_pwd;
+		this.cu_name=cu_name;
+		this.cu_nickname=cu_nickname;
+		this.cu_age=cu_age;
+		this.cu_sex=cu_sex;
+		this.cu_email=cu_email;
+		this.cu_campus=cu_campus;
+		this.cu_qq=cu_qq;
+		this.cu_credit=cu_credit;
+		this.cu_authority=cu_authority;
 	};
 	
 	public  String getCu_id() {
@@ -108,7 +127,7 @@ public class Customer {
 		this.cu_img = cu_img;
 	}
 	
-	public int getCu_qq() {
+	public long getCu_qq() {
 		return cu_qq;
 	}
 	
