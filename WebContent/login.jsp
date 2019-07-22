@@ -67,28 +67,28 @@
 											<div class="col-sm-4">
 												<ul class="multi-column-dropdown">
 													<h6>类型</h6>  
-													<li><a href="menu.html">跑&emsp;腿 </a></li> 
-													<li><a href="menu.html">组&emsp;队</a></li> 
-													<li><a href="menu.html">交&emsp;易</a></li>
-													<li><a href="menu.html">求&emsp;助</a></li>
-													<li><a href="menu.html">其&emsp;他</a></li>
+													<li><a href="about1.jsp">跑&emsp;腿 </a></li> 
+													<li><a href="about1.jsp">组&emsp;队</a></li> 
+													<li><a href="about1.jsp">交&emsp;易</a></li>
+													<li><a href="about1.jsp">求&emsp;助</a></li>
+													<li><a href="about1.jsp">其&emsp;他</a></li>
 												</ul>
 											</div>
 											<div class="col-sm-4">
 												<ul class="multi-column-dropdown">
 													<h6> 校 区</h6> 
-													<li><a href="menu.html">江安校区</a></li> 
-													<li><a href="menu.html">华西校区</a></li> 
-													<li><a href="menu.html">望江校区</a></li> 
+													<li><a href="about1.jsp">江安校区</a></li> 
+													<li><a href="about1.jsp">华西校区</a></li> 
+													<li><a href="about1.jsp">望江校区</a></li> 
 													
 												</ul>
 											</div>
 											<div class="col-sm-4">
 												<ul class="multi-column-dropdown">
-													<h6> 校 区</h6> 
-													<li><a href="menu.html">简&emsp;单</a></li> 
-													<li><a href="menu.html">中&emsp;等</a></li> 
-													<li><a href="menu.html">难</a></li> 
+													<h6> 难度</h6> 
+													<li><a href="about1.jsp">简&emsp;单</a></li> 
+													<li><a href="about1.jsp">中&emsp;等</a></li> 
+													<li><a href="about1.jsp">难</a></li> 
 												</ul>
 											</div> 
 											<div class="clearfix"></div>
@@ -132,14 +132,6 @@
 					<input class="agile-ltext" type="text" name="Username" placeholder="用户名"  required>
 					<input class="agile-ltext" type="password" name="password" placeholder="密码"  required>
 					<div class="wthreelogin-text"> 
-						<ul> 
-							<li>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i> 
-									<span> 记住密码？</span> 
-								</label> 
-							</li>
-							<li><a href="#">不记住密码</a> </li>
-						</ul>
 						<div class="clearfix"> </div>
 					</div>   
 					<input type="submit" value="登录">
@@ -161,12 +153,6 @@
 					<li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
 					<li><a href="#" class="fa fa-rss icon rss"> </a></li> 
 				</ul> 
-				<ul class="apps"> 
-					<li><h4>下载我们的APP: </h4> </li>
-					<li><a href="#" class="fa fa-apple"></a></li>
-					<li><a href="#" class="fa fa-windows"></a></li>
-					<li><a href="#" class="fa fa-android"></a></li>
-				</ul> 
 			</div> 
 			<div class="col-md-6 subscribe-right">
 				<h3 class="w3ls-title">获取更及时的服务，你可以<br><span></span></h3>
@@ -185,46 +171,44 @@
 		<div class="container">
 			<div class="w3_footer_grids">
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-					<h3>公司</h3>
-					<ul>
-						<li><a href="about.html">关于我们</a></li>
-						<li><a href="contract.jsp">发布任务</a></li>   
-						<li><a href="help.html">加入我们</a></li>   
-					</ul>
-				</div> 
+				团队
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">加入我们</a></li>
+				</ul>
+		</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-					<h3>帮助</h3>
-					<ul>
-						<li><a href="faq.html">FAQ</a></li> 
-						<li><a href="login.html">清空</a></li>   
-						<li><a href="login.html">清单</a></li>  
-					</ul>  
+				帮助
+				<ul>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">操作指南</a></li>
+					<li><a href="">问题反馈</a></li>
+					<li><a href="">违规术语</a></li>
+				</ul>
 				</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-					<h3>信息</h3>
-					<ul>  
-						<li><a href="#">信息</a></li>  
-						<li><a href="#">信息</a></li>
-						<li><a href="#">信息</a></li> 
-					</ul>      
+				信息
+				<ul>
+					<li><a href="">开发人员信息</a></li>
+					<li><a href="">管理员信息</a></li>
+					<li><a href="">网站信息</a></li>
+				</ul>
 				</div>
 				<div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-					<h3>分类</h3> 
-					<ul>
-						<li><a href="menu.html">跑腿</a></li> 
-						<li><a href="menu.html">组队</a></li>
-						<li><a href="menu.html">交易</a></li>
-						<li><a href="menu.html">求助</a></li> 
-						<li><a href="menu.html">其他</a></li>
-					</ul>  
+				分类
+				<ul>
+					<li><a href="">跑腿</a></li>
+					<li><a href="">组队</a></li>
+					<li><a href="">交易</a></li>
+					<li><a href="">求助</a></li>
+					<li><a href="">其它</a></li>
+				</ul>
 				</div> 
 				<div class="clearfix"> </div>
 			</div>
 		</div> 
 	</div>
-	
-	<!-- //footer -->
-	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script>
         w3ls.render();
@@ -240,8 +224,6 @@
         	}
         });
    	 </script>  
-		<!-- //cart-js -->	
-		<!-- start-smooth-scrolling -->
 		<script src="js/SmoothScroll.min.js"></script>  
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>	
@@ -271,10 +253,6 @@
 			
 		});
 		</script>
-		<!-- //smooth-scrolling-of-move-up --> 
-		<!-- Bootstrap core JavaScript
-  		  ================================================== -->
-  			 <!-- Placed at the end of the document so the pages load faster -->
     	<script src="js/bootstrap.js"></script>
 	</body>
 </html>

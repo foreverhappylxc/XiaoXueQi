@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet{
 	
 		String cu_id = request.getParameter("Username");
 		
-		String cu_pwd = request.getParameter("password");
+		String cu_pwd = request.getParameter("Password");
 	
 		//DB
 		
