@@ -14,7 +14,13 @@ public class Customer {
 	private String cu_img;
 	private int cu_qq;
 	
-	public String getCu_id() {
+	public Customer() {};
+	public Customer(String cu_id,String cu_pwd) {
+		this.cu_id=cu_id;
+		this.cu_pwd=cu_pwd;
+	};
+	
+	public  String getCu_id() {
 		return cu_id;
 	}
 	
