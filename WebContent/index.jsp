@@ -20,13 +20,13 @@
 				{%>
 			<ul class="list1" id="list1">
 				<li>
-					<a id="text2" class="text2" href="#">
+					<a id="text2" class="text2" href="login.jsp">
 						<img class="img1" alt="u1" src="img/u1.png" width="15px" height="11px">
 						登录
 					</a>
 				</li>
 				<li>
-					<a id="text3" class="text3" href="#">
+					<a id="text3" class="text3" href="signup.jsp">
 						<img class="img2" alt="u2" src="img/u2.png" width="14px" height="11px">
 						注册
 					</a>
@@ -35,13 +35,13 @@
 			<%} else { %>
 				<ul>
 					<li>
-						<a href="#">
+						<a href="central.jsp">
 							<img alt="" src="">
 							<%= request.getSession().getAttribute("username")  %>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="login.jsp">
 							注销
 						</a>
 					</li>
@@ -58,28 +58,28 @@
 			<div class="top2_list">
 				<ul>
 					<li>
-						<a href="#">
+						<a href="index.jsp">
 							主页
 						</a>
 					</li>
 					<li>
-						<a class="text4" href="#">
+						<a class="text4">
 							分类
 							<img class="img3" alt="img3" src="img/arrow1.png" width="6px" height="8px">
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="about.jsp">
 							全部悬赏
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="central.jsp">
 							个人中心
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="contract.jsp">
 							发布任务
 						</a>
 					</li>
@@ -135,7 +135,7 @@
 	</div>
 	<div class="middle1" id="middle1">
 		<span>
-			<a class="text5" href="#">
+			<a class="text5" href="index.jsp">
 				<img class="img4" alt="i1" src="img/i1.png" width="16px" height="14px">
 				主页
 			</a>
@@ -143,7 +143,7 @@
 	</div>
 	<div class="middle2" id="middle2" align="center">
 		<div class="middle21">
-			<a href="#">
+			<a href="about.jsp">
 				最新 
 				<span class="m21span1">
 					悬赏任务
@@ -158,7 +158,7 @@
 			</a>
 		</div>
 		<div class="middle22">
-			<a href="#">
+			<a href="contract.jsp">
 				发布
 				<span class="m22span1">
 					悬赏任务
@@ -213,7 +213,7 @@
 		<div class="m42">
 			<div class="m421">
 				<div class="m4211">
-					<a href="">
+					<a href="about1.jsp">
 						跑腿
 						<span>代取快递/代领外卖/代购等</span>
 					</a>
@@ -221,7 +221,7 @@
 			</div>
 			<div class="m422">
 				<div class="m4221">
-					<a href="">
+					<a href="about1.jsp">
 						组队
 						<span>出行/参赛/学习等</span>
 					</a>
@@ -229,7 +229,7 @@
 			</div>
 			<div class="m423">
 				<div class="m4231">
-					<a href="">
+					<a href="about1.jsp">
 						交易
 						<span>二手买卖/闲置出售/租借等</span>
 					</a>
@@ -237,7 +237,7 @@
 			</div>
 			<div class="m424">
 				<div class="m4241">
-					<a href="">
+					<a href="about1.jsp">
 						求助
 						<span>生活问题/学习课业/寻人等</span>
 					</a>
@@ -245,7 +245,7 @@
 			</div>
 			<div class="m425">
 				<div class="m4251">
-					<a href="">
+					<a href="about1.jsp">
 						其它
 						<span>更多问题/更多解决</span>
 					</a>
@@ -258,18 +258,18 @@
 			<div>
 				团&nbsp;队
 				<ul>
-					<li><a href="">关于我们</a></li>
-					<li><a href="">联系我们</a></li>
-					<li><a href="">加入我们</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">加入我们</a></li>
 				</ul>
 			</div>
 			<div>
 				帮&nbsp;助
 				<ul>
-					<li><a href="">FAQ</a></li>
-					<li><a href="">操作指南</a></li>
-					<li><a href="">问题反馈</a></li>
-					<li><a href="">违规术语</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">操作指南</a></li>
+					<li><a href="#">问题反馈</a></li>
+					<li><a href="#">违规术语</a></li>
 				</ul>
 			</div>
 			<div>
@@ -283,11 +283,11 @@
 			<div>
 				分&nbsp;类
 				<ul>
-					<li><a href="">跑腿</a></li>
-					<li><a href="">组队</a></li>
-					<li><a href="">交易</a></li>
-					<li><a href="">求助</a></li>
-					<li><a href="">其它</a></li>
+					<li><a href="#">跑腿</a></li>
+					<li><a href="#">组队</a></li>
+					<li><a href="#">交易</a></li>
+					<li><a href="#">求助</a></li>
+					<li><a href="#">其它</a></li>
 				</ul>
 			</div>
 		</div>
@@ -298,27 +298,27 @@
 			<hr>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						跑&nbsp;腿
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						组&nbsp;队
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						交&nbsp;易
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						求&nbsp;助
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						其&nbsp;它
 					</a>
 				</li>
@@ -329,17 +329,17 @@
 			<hr>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						江安校区
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						华西校区
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						望江校区
 					</a>
 				</li>
@@ -350,17 +350,17 @@
 			<hr>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						简&nbsp;单
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						中&nbsp;等
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="about1.jsp">
 						困&nbsp;难
 					</a>
 				</li>
