@@ -92,3 +92,11 @@ ul
 	margin: 0 auto;
 	padding-top: 20px;
 }
+
+.txt
+{
+	width: 100%;
+	margin-top: 10px;
+	height: 790px;
+	overflow-y: auto;
+}
