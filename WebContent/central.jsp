@@ -24,16 +24,16 @@
 					</a>
 					<ul class="item">
 						<li class="subitem">
-							<a href="#">
+							<a class="0s1" href="CentralServlet?val=1">
 								个人信息
 							</a>
 						</li>
-						<li class="subitem">
+						<li class="0s2" class="subitem">
 							<a href="#">
 								实名认证
 							</a>
 						</li>
-						<li class="subitem">
+						<li class="0s3" class="subitem">
 							<a href="#">
 								审核中心
 							</a>
@@ -52,28 +52,23 @@
 					 </a>
 					<ul class="item1">
 						<li class="subitem1">
-							<a href="#">
+							<a class="1s1" href="#">
 								等待进行
 							</a>
 						</li>
 						<li class="subitem1">
-							<a href="#">
+							<a class="1s2" href="#">
 								进行中
 							</a>
 						</li>
 						<li class="subitem1">
-							<a href="#">
+							<a class="1s3" href="#">
 								已完成
 							</a>
 						</li>
 						<li class="subitem1">
-							<a href="#">
+							<a class="1s4" href="#">
 								未完成
-							</a>
-						</li>
-						<li class="subitem1">
-							<a href="#">
-								已删除
 							</a>
 						</li>
 					</ul>
@@ -85,17 +80,17 @@
 					 </a>
 					<ul class="item2">
 						<li class="subitem2">
-							<a href="#">
+							<a class="2s1" href="#">
 								进行中
 							</a>
 						</li>
 						<li class="subitem2">
-							<a href="#">
+							<a class="2s2" href="#">
 								已完成
 							</a>
 						</li>
 						<li class="subitem2">
-							<a href="#">
+							<a class="2s3" href="#">
 								未完成
 							</a>
 						</li>
@@ -108,12 +103,12 @@
 					 </a>
 					<ul class="item3">
 						<li class="subitem3">
-							<a href="#">
+							<a class="3s1" href="#">
 								通过
 							</a>
 						</li>
 						<li class="subitem3">
-							<a href="#">
+							<a class="3s2" href="#">
 								未通过
 							</a>
 						</li>
@@ -142,7 +137,37 @@
 			<div class="xxx">
 			</div>
 			<div class="txt">
-				<div class="reault">
+				<div class="result">
+					<div class="rLeft">
+						<div class="result1">
+							<h4>Title</h4>
+						</div>
+						<div class="result2">
+							content
+						</div>
+						<div class="result3">
+							<span>
+								t_class
+							</span>
+							<span>
+								p_btime
+							</span>
+							<span>
+								t_campus
+							</span>
+							<span>
+								t_rank
+							</span>
+						</div>
+					</div>
+					<div class="rRight">
+						<a href="#" class="del">
+							<img alt="del" src="img/del.png">
+						</a>
+						<a href="#" class="modify">
+							<img alt="modify" src="img/modify.png">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
