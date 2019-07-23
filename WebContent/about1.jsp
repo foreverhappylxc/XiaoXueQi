@@ -5,8 +5,11 @@
 <head>
 <meta charset="utf-8">
 <title>分类查询</title>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 </head>
 <body>
-
+	<%@ include file="top.jsp"%>
+	<!-- To do your work  -->
+	<%@ include file="bottom.jsp"%>
 </body>
 </html>
