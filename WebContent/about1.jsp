@@ -51,6 +51,7 @@
 				<input class="search" type="submit" value="搜索">
 			</form>
 		</div>
+		<div class="content">
 		<div class="right">
 			<div class="filter">
 				<div>
@@ -95,17 +96,10 @@
 							</span>
 						</div>
 					</div>
-					<div class="rRight">
-						<a href="#" class="del">
-							<img alt="del" src="img/del.png">
-						</a>
-						<a href="#" class="modify">
-							<img alt="modify" src="img/modify.png">
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<%@ include file="bottom.jsp"%>
 </body>
 </html>
