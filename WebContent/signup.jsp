@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,8 +50,8 @@
 						<option value="华西校区">华西校区</option>
 						<option value="望江校区">望江校区</option>
 					</select>
+					<input type="file" name="Img">
 					<input class="agile-ltext" type="password" name="Password" placeholder="密码"  required>
-					<input class="agile-ltext" type="password" name="ConfirmPassword" placeholder="确认密码"  required>
 					<div class="wthreelogin-text"> 
 						<ul> 
 							<li>
