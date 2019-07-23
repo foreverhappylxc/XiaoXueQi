@@ -10,7 +10,7 @@ public class DAO {
 	public boolean register(Connection conn,Customer user)throws Exception {
 		boolean flag=false;
 		PreparedStatement pstmt=null;
-		String sql="INSERT INTO customer(cu_id,cu_pwd,cu_name,cu_nickname,cu_age,cu_sex,cu_email,cu_campus,cu_qq,cu_credit,cu_authority)VALUES(?,?,?,?,?,?,?,?,?,?,?)";//格式调整？
+		String sql="INSERT INTO customer(cu_id,cu_pwd,cu_name,cu_nickname,cu_age,cu_sex,cu_email,cu_campus,cu_qq,cu_credit,cu_authority,cu_img)VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";//格式调整？
 		pstmt=conn.prepareStatement(sql);
 		pstmt.setString(1, user.getCu_id());
 		pstmt.setString(2, user.getCu_pwd());
@@ -23,6 +23,7 @@ public class DAO {
 		pstmt.setLong(9, user.getCu_qq());
 		pstmt.setLong(10, user.getCu_credit());
 		pstmt.setString(11, user.getCu_authority());
+		pstmt.setString(12, user.getCu_img());
 		if (pstmt.executeUpdate() > 0) {
 			flag = true;
 		}

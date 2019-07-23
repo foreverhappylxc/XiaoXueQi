@@ -25,7 +25,8 @@ public class Customer {
 								String cu_campus,
 								long cu_qq,
 								int cu_credit,
-								String cu_authority) {
+								String cu_authority,
+								String cu_img) {
 		this.cu_id=cu_id;
 		this.cu_pwd=cu_pwd;
 		this.cu_name=cu_name;
@@ -37,6 +38,7 @@ public class Customer {
 		this.cu_qq=cu_qq;
 		this.cu_credit=cu_credit;
 		this.cu_authority=cu_authority;
+		this.cu_img=cu_img;
 	};
 	
 	public  String getCu_id() {
