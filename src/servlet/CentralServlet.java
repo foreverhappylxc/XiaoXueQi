@@ -46,6 +46,7 @@ public class CentralServlet extends HttpServlet {
 		CentralEnd centralEnd = new CentralEnd();
 		
 		cu_id = (String)session.getAttribute("cu_id");
+		session.setAttribute("val", val);
 		
 		if (val == 1)
 		{
@@ -84,6 +85,78 @@ public class CentralServlet extends HttpServlet {
 		{
 			JSONArray json = new JSONArray();
 			ArrayList<Task> arrayList = centralEnd.findAllTask();
+			for (Task task: arrayList)
+			{
+				JSONObject jo = new JSONObject();
+				try {
+					jo.put("t_id", task.getT_id());
+					jo.put("cu_id", task.getCu_id());
+					jo.put("t_title", task.getT_title());
+					jo.put("t_content", task.getT_content());
+					jo.put("t_amount", task.getT_amount());
+					jo.put("t_state", task.getT_state());
+					jo.put("t_num", task.getT_num());
+					jo.put("t_class", task.getT_class());
+					jo.put("p_btime", task.getP_btime());
+					jo.put("p_etime", task.getP_etime());
+					jo.put("t_money", task.getT_money());
+					jo.put("t_campus", task.getT_campus());
+					jo.put("t_rank", task.getT_rank());
+					json.put(jo);
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			response.setCharacterEncoding("utf-8");
+			PrintWriter out = response.getWriter();
+			out.write(json.toString());
+			out.flush();
+			out.close();
+		}
+		
+		if(val == 4)
+		{
+			String where = request.getParameter("where");
+			session.setAttribute("where", where);
+			JSONArray json = new JSONArray();
+			ArrayList<Task> arrayList = centralEnd.findPart1Task(where, cu_id);
+			for (Task task: arrayList)
+			{
+				JSONObject jo = new JSONObject();
+				try {
+					jo.put("t_id", task.getT_id());
+					jo.put("cu_id", task.getCu_id());
+					jo.put("t_title", task.getT_title());
+					jo.put("t_content", task.getT_content());
+					jo.put("t_amount", task.getT_amount());
+					jo.put("t_state", task.getT_state());
+					jo.put("t_num", task.getT_num());
+					jo.put("t_class", task.getT_class());
+					jo.put("p_btime", task.getP_btime());
+					jo.put("p_etime", task.getP_etime());
+					jo.put("t_money", task.getT_money());
+					jo.put("t_campus", task.getT_campus());
+					jo.put("t_rank", task.getT_rank());
+					json.put(jo);
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			response.setCharacterEncoding("utf-8");
+			PrintWriter out = response.getWriter();
+			out.write(json.toString());
+			out.flush();
+			out.close();
+		}
+		
+		if(val == 5)
+		{
+			String where = request.getParameter("where");
+			session.setAttribute("where", where);
+			JSONArray json = new JSONArray();
+			ArrayList<Task> arrayList = centralEnd.findPart2Task(where, cu_id);
 			for (Task task: arrayList)
 			{
 				JSONObject jo = new JSONObject();
