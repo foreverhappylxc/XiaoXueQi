@@ -1,6 +1,6 @@
 package entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Task {
 	private int t_id;
@@ -11,29 +11,16 @@ public class Task {
 	private String t_state;
 	private int t_num;
 	private String t_class;
-	private String p_btime;
-	private String p_etime;
+	private Date p_btime;
+	private Date p_etime;
 	private int t_money;
 	private String t_campus;
 	private String t_rank;
 	
-	public Task(int t_id, String cu_id, String t_title, String t_content, int t_amount, String t_state, int t_num,
-			String t_class, String p_btime, String p_etime, int t_money, String t_campus, String t_rank) {
-		this.t_id = t_id;
-   this.cu_id = cu_id;
-   this.t_title = t_title;
-   this.t_content = t_content;
-   this.t_amount = t_amount;
-   this.t_state = t_state;
-   this.t_num = t_num;
-   this.t_class = t_class;
-   this.p_btime = p_btime;
-   this.p_etime = p_etime;
-   this.t_money = t_money;
-   this.t_campus = t_campus;
-   this.t_rank = t_rank;
+	public Task()
+	{
+		//to do this
 	}
-
 	public int getT_id() {
 		return t_id;
 	}

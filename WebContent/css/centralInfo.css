@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@keyframes aa
+{
+	from {background-color: #08cae2;}
+	to {background-color: #00ffff;}
+}
+
+table
+{
+	width: 1100px;
+	height: 800px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Berkshire Swash', cursive;
+}
+
+input
+{
+	width: 320px;
+	height: 60px;
+	margin-left: 100px;
+	font-weight: 400;
+	font-size: 20px;
+	color: #999;
+	font-family: 'Yantramanav', sans-serif;
+	border: none;
+}
+
+.button1,.button2
+{
+	color: white;
+	background-color: #08cae2;
+}
+
+.button1:hover,.button2:hover
+{
+	-webkit-animation: aa 1s;
+	animation-fill-mode: forwards;
+}
+
+.button1:active,.button2:active
+{
+	background-color: #08cae2;
+}

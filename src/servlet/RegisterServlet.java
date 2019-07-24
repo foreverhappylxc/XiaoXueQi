@@ -23,7 +23,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import backEnd.ConnectMySQL;
-import backEnd.DAO;
+import backEnd.RegisterDAO;
 import entity.Customer;
 
 @SuppressWarnings("unused")
@@ -41,8 +41,6 @@ public class RegisterServlet extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-
-
 
 		String cu_id = request.getParameter("UserID");
 		String cu_name = request.getParameter("Username");
@@ -72,11 +70,6 @@ public class RegisterServlet extends HttpServlet{
 				if(item.isFormField()) {
 					String filename=item.getFieldName();
 					String value=item.getString("utf-8");
-					if(filename.equals("UserID")) {
-						user.setCu_name(value);
-					}else if(filename.equals("Password")) {
-						user.setCu_pwd(value);
-					}//?
 				}else {
 					String filename=item.getName();
 					System.out.println("文件"+filename);
@@ -103,7 +96,7 @@ public class RegisterServlet extends HttpServlet{
 			System.out.println("Password"+user.getCu_pwd());
 			 
 		ConnectMySQL customerregister = new ConnectMySQL();
-		DAO dao=new DAO();
+		RegisterDAO dao=new RegisterDAO();
 		try {
 			Connection connection=customerregister.conn;
 			if(dao.register(connection, user)) {

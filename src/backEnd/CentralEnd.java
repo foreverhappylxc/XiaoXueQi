@@ -3,8 +3,11 @@ package backEnd;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 import entity.Customer;
+import entity.Task;
 
 public class CentralEnd {
 	public Customer customerInfo(String cu_id)
@@ -36,5 +39,63 @@ public class CentralEnd {
 			e.printStackTrace();
 		}
 		return customer;
+	}
+	
+	public boolean modifyUserInfo(String cu_id,String cu_pwd,String cu_nickname, int cu_age, String cu_email, String cu_campus, int cu_qq) {
+		ConnectMySQL connectMySQL = new ConnectMySQL();
+		String sql = "update customer set cu_nickname=?,cu_age=?,cu_email=?,cu_campus=?,cu_qq=?,cu_pwd=? where cu_id=?";
+		try {
+			PreparedStatement preparedStatement = connectMySQL.conn.prepareStatement(sql);
+			preparedStatement.setString(1, cu_nickname);
+			preparedStatement.setInt(2, cu_age);
+			preparedStatement.setString(3, cu_email);
+			preparedStatement.setString(4, cu_campus);
+			preparedStatement.setInt(5, cu_qq);
+			preparedStatement.setString(6, cu_pwd);
+			preparedStatement.setString(7, cu_id);
+			preparedStatement.execute();
+			preparedStatement.close();
+			connectMySQL.conn.close();
+			return true;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public ArrayList<Task> findAllTask()
+	{
+		ConnectMySQL connectMySQL = new ConnectMySQL();
+		ArrayList<Task> arrayList = new ArrayList<Task>();
+		String sql = "select * from task;";
+		try {
+			Statement statement = connectMySQL.conn.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			while(resultSet.next())
+			{
+				Task task = new Task();
+				task.setT_id(resultSet.getInt("t_id"));
+				task.setCu_id(resultSet.getString("cu_id"));
+				task.setT_title(resultSet.getString("t_title"));
+				task.setT_content(resultSet.getString("t_content"));
+				task.setT_amount(resultSet.getInt("t_amount"));
+				task.setT_state(resultSet.getString("t_state"));
+				task.setT_num(resultSet.getInt("t_num"));
+				task.setT_class(resultSet.getString("t_class"));
+				task.setP_btime(resultSet.getTimestamp("p_btime"));
+				task.setP_etime(resultSet.getTimestamp("p_etime"));
+				task.setT_money(resultSet.getInt("t_money"));
+				task.setT_campus(resultSet.getString("t_campus"));
+				task.setT_rank(resultSet.getString("t_rank"));
+				arrayList.add(task);
+			}
+			resultSet.close();
+			connectMySQL.conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arrayList;
 	}
 }
