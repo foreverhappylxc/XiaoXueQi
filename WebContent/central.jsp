@@ -8,6 +8,42 @@
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <link rel="stylesheet" type="text/css" href="css/central.css">
 <script type="text/javascript" src="js/central.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".0s2").click(function(event){
+		$("center1").remove();
+		event.preventDefault();
+		var txt = "<div class='center1' align='center'><table><tr><td>姓名</td><td><input type='text' placeholder='输入姓名'></td></tr>"
+		+ "<tr><td>学号</td><td><input type='text' placeholder='输入学号'></td></tr><tr><td colspan='2' align='center'>"
+		+ "<input type='button' class='button1' value='实名认证' onclick='alert('因为数据原因，没办法进行实名认证');'></td></tr></table></div>";
+		$(".txt").append(txt);
+	});
+	$(".0s3").click(function(event){
+		$(".result").remove();
+		event.preventDefault();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=3",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+					{
+					var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+						+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+						+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+						+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+					$(".txt").append(txt);
+					}
+			},
+			error: function(state, xhr, error)
+			{
+				
+			}
+		});
+	});
+})
+</script>
 </head>
 <body>
 	<%@ include file="top.jsp"%>
@@ -28,13 +64,13 @@
 								个人信息
 							</a>
 						</li>
-						<li class="0s2" class="subitem">
-							<a href="#">
+						<li class="subitem">
+							<a class="0s2" href="#">
 								实名认证
 							</a>
 						</li>
-						<li class="0s3" class="subitem">
-							<a href="#">
+						<li class="subitem">
+							<a class="0s3" href="#">
 								审核中心
 							</a>
 						</li>
@@ -137,38 +173,7 @@
 			<div class="xxx">
 			</div>
 			<div class="txt">
-				<div class="result">
-					<div class="rLeft">
-						<div class="result1">
-							<h4>Title</h4>
-						</div>
-						<div class="result2">
-							content
-						</div>
-						<div class="result3">
-							<span>
-								t_class
-							</span>
-							<span>
-								p_btime
-							</span>
-							<span>
-								t_campus
-							</span>
-							<span>
-								t_rank
-							</span>
-						</div>
-					</div>
-					<div class="rRight">
-						<a href="#" class="del">
-							<img alt="del" src="img/del.png">
-						</a>
-						<a href="#" class="modify">
-							<img alt="modify" src="img/modify.png">
-						</a>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
