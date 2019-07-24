@@ -21,35 +21,6 @@ public class Task {
 	{
 		//to do this
 	}
-	
-	 public Task(int t_id,
-			 String cu_id,
-			 String t_title,
-			 String t_content,
-			 int t_amount,
-			 String t_state,
-			 int t_num,
-			 String t_class,
-			 Date p_btime,
-			 Date p_etime,
-			 int t_money,
-			 String t_campus,
-			 String t_rank) {
-		 this.cu_id=cu_id;
-		 this.t_title=t_title;
-		 this.t_content=t_content;
-		 this.t_amount=t_amount;
-		 this.t_state=t_state;
-		 this.t_num=t_num;
-		 this.t_class=t_class;
-		 this.p_btime=p_btime;
-		 this.p_etime=p_etime;
-		 this.t_money=t_money;
-		 this.t_campus=t_campus;
-		 this.t_rank=t_rank;
-	
-	    }
-	 
 	public int getT_id() {
 		return t_id;
 	}
