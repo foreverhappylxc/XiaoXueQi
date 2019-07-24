@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="entity.Task"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -12,12 +14,9 @@
 	<%@ include file="top.jsp"%>
 	<!-- To do your work  -->
 	<div class="top4" id="top4">
-			<form action="SearchAbout">
+			<form action="SearchAbout" method="post">
 				<input type="text" class="keyword" name="keyword" id="keyword" placeholder="输入查询关键字" maxlength="20">
-				<select class="select1">
-					<option value="*">
-						全部
-					</option>
+				<select class="select1" name="t_class" id ="t_class">
 					<option value="跑腿">
 						跑腿
 					</option>
@@ -34,10 +33,7 @@
 						其它
 					</option>
 				</select>
-				<select class="select2">
-					<option value="*">
-						全部
-					</option>
+				<select class="select2" name="t_campus" id="t_campus">
 					<option value="江安校区">
 						江安校区
 					</option>
@@ -75,26 +71,32 @@
 			<div class="txt">
 				<div class="result">
 					<div class="rLeft">
+						<% if(request.getAttribute("list") !=null && request.getAttribute("list") !="") {
+						ArrayList<Task> list= (ArrayList<Task>)request.getAttribute("list");
+						for(Task task:list){%>
 						<div class="result1">
-							<h4>Title</h4>
+							<h4><%= task.getT_title() %></h4>
 						</div>
 						<div class="result2">
-							content
+							<%= task.getT_content() %>
 						</div>
 						<div class="result3">
 							<span>
-								t_class
+								<%= task.getT_class() %>
 							</span>
 							<span>
-								p_btime
+								<%= task.getP_btime() %>
 							</span>
 							<span>
-								t_campus
+								<%= task.getT_class() %>
 							</span>
 							<span>
-								t_rank
+								<%= task.getT_rank() %>
 							</span>
 						</div>
+						<%}}else { %>
+						无数据
+						<%} %>
 					</div>
 				</div>
 			</div>
