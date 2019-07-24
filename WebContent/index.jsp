@@ -126,12 +126,9 @@ $(document).ready(function(){
 					学生日常任务悬赏系统
 				</span>
 			</h2>
-			<form action="SearchAbout">
+			<form action="SearchAbout" method="post">
 				<input type="text" class="keyword" name="keyword" id="keyword" placeholder="输入查询关键字" maxlength="20">
-				<select class="select1">
-					<option value="*">
-						全部
-					</option>
+				<select class="select1" name="t_class" id = "t_class">
 					<option value="跑腿">
 						跑腿
 					</option>
@@ -148,10 +145,7 @@ $(document).ready(function(){
 						其它
 					</option>
 				</select>
-				<select class="select2">
-					<option value="*">
-						全部
-					</option>
+				<select class="select2" name="t_campus" id="t_campus">
 					<option value="江安校区">
 						江安校区
 					</option>
@@ -331,27 +325,27 @@ $(document).ready(function(){
 			<hr>
 			<ul>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=1&con=跑腿">
 						跑&nbsp;腿
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=1&con=组队">
 						组&nbsp;队
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=1&con=交易">
 						交&nbsp;易
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=1&con=求助">
 						求&nbsp;助
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=1&con=其它">
 						其&nbsp;它
 					</a>
 				</li>
@@ -362,17 +356,17 @@ $(document).ready(function(){
 			<hr>
 			<ul>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=2&con=江安校区">
 						江安校区
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=2&con=华西校区">
 						华西校区
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=2&con=望江校区">
 						望江校区
 					</a>
 				</li>
@@ -383,17 +377,17 @@ $(document).ready(function(){
 			<hr>
 			<ul>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=3&con=简单">
 						简&nbsp;单
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=3&con=中等">
 						中&nbsp;等
 					</a>
 				</li>
 				<li>
-					<a href="about1.jsp">
+					<a href="about1.jsp?value=3&con=困难">
 						困&nbsp;难
 					</a>
 				</li>
