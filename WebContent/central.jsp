@@ -42,6 +42,11 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$(".del").click(function(event){
+		alert();
+		event.preventDefault();
+		$("this").remove();
+	});
 })
 </script>
 </head>

@@ -17,6 +17,11 @@ public class Task {
 	private String t_campus;
 	private String t_rank;
 	
+	public Task()
+	{
+		//to do this
+	}
+	
 	 public Task(int t_id,
 			 String cu_id,
 			 String t_title,
