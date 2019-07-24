@@ -1,7 +1,6 @@
 package backEnd;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 
 public class ConnectMySQL {
 	public Connection conn;
@@ -16,4 +15,13 @@ public class ConnectMySQL {
 			e.printStackTrace();
 		}
 	}
+	public ResultSet query(String sql){
+        try {
+            Statement stmt = this.conn.createStatement();
+            return stmt.executeQuery(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
