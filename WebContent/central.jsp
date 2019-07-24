@@ -42,6 +42,167 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$(".1s1").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=4&where=等待进行",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".1s2").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=4&where=进行中",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".1s3").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=4&where=已完成",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".1s4").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=4&where=未完成",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".2s1").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=5&where=进行中",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".2s2").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=5&where=已完成",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
+	$(".2s3").click(function(event){
+		event.preventDefault();
+		$(".result").remove();
+		$.ajax({
+			type: "post",
+			url: "CentralServlet?val=5&where=未完成",
+			data: {},
+			dataType: "json",
+			success: function(response, state, xhr){
+				for (i in response)
+				{
+				var txt = "<div id='txt"+ i + "' class='result'><div class='rLeft'><div class='result1'><h4>"+response[i].t_title+"</h4></div><div class='result2'>" + response[i].t_content + "</div>"
+					+ "<div class='result3'><span>"+ response[i].t_class +"</span><span>"+ response[i].p_btime +"</span><span>" + response[i].t_campus + "</span><span>"+ response[i].t_rank +"</span>"
+					+ "</div></div><div class='rRight'><a href='#' class='del'><img alt='del' src='img/del.png'></a>"
+					+ "<a href='#' class='modify'><img alt='modify' src='img/modify.png'></a></div></div>";
+				$(".txt").append(txt);
+				}
+			},
+			error: function(state, xhr, error){
+				
+			}
+		});
+	});
 	$(".del").click(function(event){
 		alert();
 		event.preventDefault();

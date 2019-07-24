@@ -98,4 +98,78 @@ public class CentralEnd {
 		}
 		return arrayList;
 	}
+	
+	public ArrayList<Task> findPart1Task(String where, String cu_id)
+	{
+		ConnectMySQL connectMySQL = new ConnectMySQL();
+		ArrayList<Task> arrayList = new ArrayList<Task>();
+		String sql = "select * from task where t_state=? and cu_id=?;";
+		try {
+			PreparedStatement statement = connectMySQL.conn.prepareStatement(sql);
+			statement.setString(1, where);
+			statement.setString(2, cu_id);
+			ResultSet resultSet = statement.executeQuery();
+			while(resultSet.next())
+			{
+				Task task = new Task();
+				task.setT_id(resultSet.getInt("t_id"));
+				task.setCu_id(resultSet.getString("cu_id"));
+				task.setT_title(resultSet.getString("t_title"));
+				task.setT_content(resultSet.getString("t_content"));
+				task.setT_amount(resultSet.getInt("t_amount"));
+				task.setT_state(resultSet.getString("t_state"));
+				task.setT_num(resultSet.getInt("t_num"));
+				task.setT_class(resultSet.getString("t_class"));
+				task.setP_btime(resultSet.getTimestamp("p_btime"));
+				task.setP_etime(resultSet.getTimestamp("p_etime"));
+				task.setT_money(resultSet.getInt("t_money"));
+				task.setT_campus(resultSet.getString("t_campus"));
+				task.setT_rank(resultSet.getString("t_rank"));
+				arrayList.add(task);
+			}
+			resultSet.close();
+			connectMySQL.conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arrayList;
+	}
+	
+	public ArrayList<Task> findPart2Task(String where, String cu_id)
+	{
+		ConnectMySQL connectMySQL = new ConnectMySQL();
+		ArrayList<Task> arrayList = new ArrayList<Task>();
+		String sql = "select * from task natural join recieve where t_state=? and cu_id=?;";
+		try {
+			PreparedStatement statement = connectMySQL.conn.prepareStatement(sql);
+			statement.setString(1, where);
+			statement.setString(2, cu_id);
+			ResultSet resultSet = statement.executeQuery();
+			while(resultSet.next())
+			{
+				Task task = new Task();
+				task.setT_id(resultSet.getInt("t_id"));
+				task.setCu_id(resultSet.getString("cu_id1"));
+				task.setT_title(resultSet.getString("t_title"));
+				task.setT_content(resultSet.getString("t_content"));
+				task.setT_amount(resultSet.getInt("t_amount"));
+				task.setT_state(resultSet.getString("t_state"));
+				task.setT_num(resultSet.getInt("t_num"));
+				task.setT_class(resultSet.getString("t_class"));
+				task.setP_btime(resultSet.getTimestamp("p_btime"));
+				task.setP_etime(resultSet.getTimestamp("p_etime"));
+				task.setT_money(resultSet.getInt("t_money"));
+				task.setT_campus(resultSet.getString("t_campus"));
+				task.setT_rank(resultSet.getString("t_rank"));
+				arrayList.add(task);
+			}
+			resultSet.close();
+			connectMySQL.conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arrayList;
+	}
 }
