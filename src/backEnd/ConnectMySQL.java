@@ -2,8 +2,22 @@ package backEnd;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class ConnectMySQL {
+	//÷¥––≤È—Ø
+			public ResultSet query(String sql){
+				System.out.println("sql: "+sql);
+				try {
+					Statement stmt = this.conn.createStatement();
+					return stmt.executeQuery(sql);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				return null;
+			}
 	public Connection conn;
 	
 	public ConnectMySQL()
